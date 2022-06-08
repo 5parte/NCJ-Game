@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private bool grounded;
 
-    private void Awake()
+     void Awake()
     {
         // Get RigidBody
         body = GetComponent<Rigidbody2D>();
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Update()
+     void Update()
     {
         // Get left and right button inputs
         float horizontalInput = Input.GetAxis("Horizontal");
